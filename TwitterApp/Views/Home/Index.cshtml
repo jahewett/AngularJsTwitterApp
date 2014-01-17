@@ -1,0 +1,34 @@
+﻿<div ng-app="ngTwitter">
+    <!-- More Goodness Coming -->
+
+    <script type="text/ng-template" id="timeline">
+        <div>
+            <textarea ng-model="statusText" rows="5"></textarea>
+            <button class="btn btn-success" ng-click="sendStatus()">Tweet</button>
+        </div>
+        <h3>
+            <ng-pluralize count="tweets.length" when="newTweets"></ng-pluralize>
+        </h3>
+        <table class="table table-striped">
+            <tr ng-repeat="status in tweets">
+                <td>
+                    <img src="{{status.ImageUrl}}" />
+                </td>
+                <td>
+                    <div>
+                        <strong>{{status.ScreenName}}</strong>
+                        <br />
+                        {{status.Tweet}}
+                    </div>
+                    <div>
+                        <retweet-button>Retweet</retweet-button>
+                        <a class="btn btn-primary btn-xs" href="#/status/{{status.Id}}">Details</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </script>
+
+    <ng-view></ng-view>
+
+</div>
