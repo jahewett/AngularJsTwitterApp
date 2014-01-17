@@ -12,5 +12,8 @@ namespace TwitterApp.Controllers
         public string MediaUrl { get; set; }
         public string Tweet { get; set; }
         public string Id { get; set; }
+        public string FavouriteCount { get; set; }
+        public string RetweetCount { get; set; }
+        public bool HasMedia { get; set; }
     }
 }

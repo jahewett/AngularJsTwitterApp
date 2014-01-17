@@ -82,8 +82,7 @@ namespace TwitterApp.Controllers
                 select new TweetViewModel
                 {
                     ImageUrl = tweet.User.ProfileImageUrl,
-                    ScreenName = tweet.User.Identifier.
-                    ScreenName,
+                    ScreenName = tweet.User.Identifier.ScreenName,
                     MediaUrl = GetTweetMediaUrl(tweet),
                     Tweet = tweet.Text,
                     Id = tweet.StatusID
@@ -150,11 +149,57 @@ namespace TwitterApp.Controllers
             }
         }
 
+        [HttpGet]
+        public JsonResult Status(string id)
+        {
+            Authorize();
+            string screenName = ViewBag.User;
+            IEnumerable<TweetViewModel> friendTweets = new List<TweetViewModel>();
+
+            if (string.IsNullOrEmpty(screenName))
+            {
+                return Json(friendTweets, JsonRequestBehavior.AllowGet);
+            }
+
+            twitterCtx = new TwitterContext(auth);
+
+            friendTweets =
+                (
+                from tweet in twitterCtx.Status
+                 where tweet.Type == StatusType.Show &&
+                       tweet.ID == id
+                 select GetTweetViewModel(tweet))
+                .ToList();
+
+            if (friendTweets.Count() > 0)
+                return Json(friendTweets.ElementAt(0), JsonRequestBehavior.AllowGet);
+            else
+                return Json(new TweetViewModel { Tweet = "Requested Status Not Found" }, JsonRequestBehavior.AllowGet);
+        }
+
+        private TweetViewModel GetTweetViewModel(Status tweet)
+        {
+            var tvm = new TweetViewModel
+                {
+                    ImageUrl = tweet.User.ProfileImageUrl,
+                    ScreenName = tweet.User.Identifier.ScreenName,
+                    MediaUrl = GetTweetMediaUrl(tweet),
+                    Tweet = tweet.Text,
+                    Id = tweet.StatusID,
+                    FavouriteCount = tweet.FavoriteCount.ToString(),
+                    RetweetCount = tweet.RetweetCount.ToString()
+                };
+
+            tvm.HasMedia = !string.IsNullOrEmpty(tvm.MediaUrl);
+
+            return tvm;
+        }
+
         private string GetTweetMediaUrl(Status status)
         {
-            if (status.Entities != null && status.Entities.MediaEntities.Count > 0)
+            if (status.Entities != null && status.Entities.UrlEntities.Count > 0)
             {
-                return status.Entities.MediaEntities[0].MediaUrlHttps;
+                return status.Entities.UrlEntities[0].Url;
             }
 
             return "";

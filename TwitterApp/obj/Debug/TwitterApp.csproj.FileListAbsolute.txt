@@ -53,3 +53,31 @@ C:\Users\james\Documents\Visual Studio 2012\Projects\AngularJsTwitterApp\Twitter
 C:\Users\james\Documents\Visual Studio 2012\Projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.WebPages.Razor.xml
 C:\Users\james\Documents\Visual Studio 2012\Projects\AngularJsTwitterApp\TwitterApp\obj\Debug\TwitterApp.dll
 C:\Users\james\Documents\Visual Studio 2012\Projects\AngularJsTwitterApp\TwitterApp\obj\Debug\TwitterApp.pdb
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\TwitterApp.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\TwitterApp.pdb
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\LinqToTwitter.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\Newtonsoft.Json.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Net.Http.Formatting.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.Helpers.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.Http.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.Http.WebHost.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.Mvc.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.Razor.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.WebPages.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\Newtonsoft.Json.xml
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Net.Http.Formatting.xml
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.Helpers.xml
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.Http.xml
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.Http.WebHost.xml
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.Mvc.xml
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.Razor.xml
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.WebPages.xml
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\obj\Debug\TwitterApp.dll
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\obj\Debug\TwitterApp.pdb
+C:\Users\james.hewett\projects\AngularJsTwitterApp\TwitterApp\obj\Debug\TwitterApp.csprojResolveAssemblyReference.cache
